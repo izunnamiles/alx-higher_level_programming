@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-def print_last_digit(number):
-    last = abs(number) % 10
-    print("{}".format(last), end="")
-    return(last)
+def remove_char_at(str, n):
+
+    new_str = ""
+
+    for i in range(len(str)):
+        if i != n:
+            new_str += str[i]
+
+    return 
