@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-def print_last_digit(number):
-    last = abs(number) % 10
-    print("{}".format(last), end="")
-    return(last)
+for i in reversed(range(97, 123)):
+    if (i % 2 == 0):
+        print('{:c}'.format(i), end='')
+    else:
+        print('{:c}'.format(i - 32), end='')
