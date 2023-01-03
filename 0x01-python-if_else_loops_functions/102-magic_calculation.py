@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-def print_last_digit(number):
-    last = abs(number) % 10
-    print("{}".format(last), end="")
-    return(last)
+def magic_calculation(a, b, c):
+    if (a < b):
+        return c
+    if (c > b):
+        return a + b
+    return (a * b) - c
