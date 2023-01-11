@@ -1,3 +1,7 @@
 #!/usr/bin/python3
-def only_diff_elements(set_1, set_2):
-    return (set_1 ^ set_2)
+def search_replace(my_list, search, replace):
+    new_list = my_list[:]
+    for i in range(len(new_list)):
+        if new_list[i] == search:
+            new_list[i] = replace
+    return (new_list)
