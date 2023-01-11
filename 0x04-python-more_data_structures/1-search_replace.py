@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-def search_replace(my_list, search, replace):
-    new_list = my_list[:]
-    for i in range(len(new_list)):
-        if new_list[i] == search:
-            new_list[i] = replace
-    return (new_list)
+def uniq_add(my_list=[]):
+    total = 0
+    for x in set(my_list):
+        total += x
+    return (total)
