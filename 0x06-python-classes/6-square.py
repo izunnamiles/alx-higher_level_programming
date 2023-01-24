@@ -18,7 +18,7 @@ class Square:
     def size(self):
         """Get/Set the current size of a square"""
         return (self.__size)
-    
+
     @size.setter
     def size(self, value):
         if not isinstance(value, int):
@@ -27,7 +27,7 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-    
+
     @property
     def position(self):
         """Get/set the current position of the square."""
@@ -45,19 +45,19 @@ class Square:
     def area(self):
         """Return the area of the square"""
         return pow(self.__size, 2)
-    
+
     def my_print(self):
         """Print the square with the # character."""
         if self.__size == 0:
             print("")
             return
-        
+
         [print("") for i in range(0, self.__position[1])]
         for i in range(0, self.__size):
             [print(" ", end="") for j in range(0, self.__position[0])]
             [print("#", end="") for k in range(self.__size)]
             print("")
-    
+
     def __str__(self):
         """Define the print() representation of a Square."""
         if self.__size != 0:
