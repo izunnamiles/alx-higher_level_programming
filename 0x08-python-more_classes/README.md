@@ -1,1 +1,1 @@
-### More on classes and objects in Python
+### More on classes and objects in Python.
